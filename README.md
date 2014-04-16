@@ -1,4 +1,4 @@
-[typo](piperchester.github.io/typo)
+[typo](https://piperchester.github.io/typo)
 ====
 ... because I had a free hour?
 
