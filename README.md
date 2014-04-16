@@ -1,4 +1,4 @@
 typo
 ====
 
-Cycles the 14 typefaces "you'll only ever need."
+Based on the opinions of people like [Alex Baldwin](http://alexbaldwin.com/all-the-fonts-youll-ever-need/).
