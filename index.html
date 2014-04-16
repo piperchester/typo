@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>14 Typefaces</title>
+	<link href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/readable/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron">
+			<h1 class="header">14 Typefaces</h1>
+			<button id="typify" type="button" class="btn btn-primary btn-lg" onclick="typify()">Typify!</button>
+			<p id="hipster-text">Raw denim fashion axe selvage, ethical swag seitan Etsy kitsch bicycle rights craft beer sriracha brunch scenester leggings fanny pack. Hoodie messenger bag mlkshk master cleanse deep v, fingerstache food truck Helvetica. Gentrify American Apparel Carles PBR&B. YOLO tofu paleo, fanny pack Shoreditch Williamsburg butcher Intelligentsia. Put a bird on it quinoa polaroid keytar wayfarers High Life occupy, Portland authentic. Carles Austin single-origin coffee messenger bag, biodiesel semiotics forage yr Helvetica hoodie sartorial street art Schlitz letterpress. Church-key deep v cardigan irony PBR bitters.
+
+				Mumblecore 90's sriracha roof party whatever raw denim. Wolf polaroid Helvetica American Apparel +1 pork belly, irony cornhole. Odd Future squid lomo High Life. Four loko slow-carb wayfarers artisan, cray hella photo booth chambray kitsch farm-to-table Brooklyn. Sustainable asymmetrical whatever, forage street art skateboard banh mi plaid photo booth beard Odd Future High Life pour-over chillwave. PBR&B selfies kitsch paleo Cosby sweater. Salvia direct trade roof party normcore literally, tattooed banh mi umami messenger bag swag.</p>
+			</div>
+		</div>
+		<script>
+		var typeIndex = 0;
+		function typify(){
+			var typefaces = ["Adobe Garamond", "Arial", "Bodoni", "Baskerville", "Futura", "Gill Sans",
+			"Helvetica", "Lucida Garande", "Museo Slab", "Palatino", "Rockwell", "Tahoma", "Trebuchet MS", "Verdana"];
+			document.getElementById("hipster-text").style.fontFamily = typefaces[typeIndex];
+			document.getElementById("typify").style.fontFamily = typefaces[typeIndex];
+			document.getElementsByTagName("h1")[0].style.fontFamily = typefaces[typeIndex];
+			document.getElementsByTagName("h1")[0].innerHTML = typefaces[typeIndex];
+			typeIndex >= 13 ? typeIndex = 0 : typeIndex++;
+		}
+		</script>
+	</body>
+	</html>
