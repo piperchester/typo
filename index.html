@@ -16,6 +16,7 @@
 				Mumblecore 90's sriracha roof party whatever raw denim. Wolf polaroid Helvetica American Apparel +1 pork belly, irony cornhole. Odd Future squid lomo High Life. Four loko slow-carb wayfarers artisan, cray hella photo booth chambray kitsch farm-to-table Brooklyn. Sustainable asymmetrical whatever, forage street art skateboard banh mi plaid photo booth beard Odd Future High Life pour-over chillwave. PBR&B selfies kitsch paleo Cosby sweater. Salvia direct trade roof party normcore literally, tattooed banh mi umami messenger bag swag.</p>
 			</div>
 		</div>
+		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script>
 		var typeIndex = 0;
 		function typify(){
@@ -26,6 +27,11 @@
 			document.getElementsByTagName("h1")[0].style.fontFamily = typefaces[typeIndex];
 			document.getElementsByTagName("h1")[0].innerHTML = typefaces[typeIndex];
 			typeIndex >= 13 ? typeIndex = 0 : typeIndex++;
+
+
+			 $.getJSON('http://hipsterjesus.com/api/', function(data) {
+            $('#hipster-text').html(data.text);
+        });
 		}
 		</script>
 	</body>
