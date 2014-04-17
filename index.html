@@ -11,6 +11,7 @@
 		<div class="jumbotron">
 			<h1 class="header">14 Typefaces</h1>
 			<button id="typify" type="button" class="btn btn-primary btn-lg" onclick="typify()">Typify!</button>
+			<button id="hipstify" type="button" class="btn btn-primary btn-lg" onclick="hisptify()">Moar Text</button>
 			<p id="hipster-text">Raw denim fashion axe selvage, ethical swag seitan Etsy kitsch bicycle rights craft beer sriracha brunch scenester leggings fanny pack. Hoodie messenger bag mlkshk master cleanse deep v, fingerstache food truck Helvetica. Gentrify American Apparel Carles PBR&B. YOLO tofu paleo, fanny pack Shoreditch Williamsburg butcher Intelligentsia. Put a bird on it quinoa polaroid keytar wayfarers High Life occupy, Portland authentic. Carles Austin single-origin coffee messenger bag, biodiesel semiotics forage yr Helvetica hoodie sartorial street art Schlitz letterpress. Church-key deep v cardigan irony PBR bitters.
 
 				Mumblecore 90's sriracha roof party whatever raw denim. Wolf polaroid Helvetica American Apparel +1 pork belly, irony cornhole. Odd Future squid lomo High Life. Four loko slow-carb wayfarers artisan, cray hella photo booth chambray kitsch farm-to-table Brooklyn. Sustainable asymmetrical whatever, forage street art skateboard banh mi plaid photo booth beard Odd Future High Life pour-over chillwave. PBR&B selfies kitsch paleo Cosby sweater. Salvia direct trade roof party normcore literally, tattooed banh mi umami messenger bag swag.</p>
@@ -27,11 +28,12 @@
 			document.getElementsByTagName("h1")[0].style.fontFamily = typefaces[typeIndex];
 			document.getElementsByTagName("h1")[0].innerHTML = typefaces[typeIndex];
 			typeIndex >= 13 ? typeIndex = 0 : typeIndex++;
+		}
 
-
-			 $.getJSON('http://hipsterjesus.com/api/', function(data) {
-            $('#hipster-text').html(data.text);
-        });
+		function hipstify(){
+			$.getJSON('http://hipsterjesus.com/api/', function(data) {
+				$('#hipster-text').html(data.text);
+			});
 		}
 		</script>
 	</body>
