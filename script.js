@@ -19,9 +19,9 @@ $(function() {
                       "Trebuchet MS",
                       "Verdana" ];
     //setup font-family
-    $("#hipster-text").style.fontFamily = typefaces[typeIndex];
-    $("#typify").style.fontFamily = typefaces[typeIndex];
-    $("#hipstify").style.fontFamily = typefaces[typeIndex];
+    $("#hipster-text").css("fontFamily", typefaces[typeIndex]);
+    $("#typify").css("fontFamily", typefaces[typeIndex]);
+    $("#hipstify").css("fontFamily", typefaces[typeIndex]);
     document.getElementsByTagName("h1")[0].style.fontFamily = typefaces[typeIndex];
     // style the header text
     document.getElementsByTagName("h1")[0].innerHTML = typefaces[typeIndex];
